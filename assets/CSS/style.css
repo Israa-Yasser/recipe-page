@@ -19,13 +19,17 @@ body {
   padding-inline: 2rem;
 }
 
-.IMG {
+.img {
   width: 100%;
   height: 250px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 12px;
   margin-block: 1.5rem;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
 }
 
 h1 {
@@ -99,6 +103,12 @@ h2 {
 .parent {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid #000;
+  margin-bottom: 1rem;
+}
+
+.parent:last-child {
+  border: none;
 }
 
 .ss {
